@@ -154,7 +154,7 @@ main .hero div a {
     font-family:"finlikless";
     font-weight:normal;
     text-decoration: none;
-    font-size: 1rem;
+    font-size:20px;
     color: white;
     padding: 16px;
     border: 1px;
@@ -186,6 +186,7 @@ main .hero .btn2 {
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
     /* background-color: black; */
+    font-weight:bold;
     padding: 5px;
     text-align: center;
     margin: 0 auto;

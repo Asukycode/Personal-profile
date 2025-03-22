@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'gilroy-bold';
+    src: url(font/Gilroy-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'gilroy-heavy';
+    src: url(font/Gilroy-Heavy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'gilroy-light';
+    src: url(font/Gilroy-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'gilroy-medium';
+    src: url(font/Gilroy-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'gilroy-regular';
+    src: url(font/Gilroy-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'genvea';
+    src: url(font/GENEVA.TTF) format('truetype');
+}
+
+* {
+    /* font-size: 16px; */
+    color: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    /* border: 1px solid red; */
+}
+
+header h1 {
+    font-family: 'gilroy-heavy';
+    font-size: 30px;
+    margin-bottom: .5rem;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid yellow; */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+nav a {
+    padding: 1rem 1rem;
+    /* border: 1px solid green; */
+    font-family: 'gilroy-medium';
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    margin: 10px 0;
+}
+
+.container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    height: 100vh;
+    /* border: 1px solid blue; */
+}
+.main {
+    width: 90%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content {
+    background-image: url('Asuky.jpg');
+    background-size: contain;
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+    aspect-ratio: 5 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.main-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main-content .info {
+    background-color: #000000a2;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 2rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: "gilroy-bold";
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.main-content p {
+    color: #ffffff;
+    font-family: "gilroy-light";
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        max-width: 90%;
+        aspect-ratio: 4 / 3;
+    }
+
+    .main-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .main-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        aspect-ratio: 1 / 1;
+    }
+
+    .main-content h2 {
+        font-size: 1rem;
+    }
+
+    .main-content p {
+        font-size: 0.8rem;
+    }
+}
+
+
+.hobbies {
+    width: 80%;
+    margin-top: 7rem;
+    background-color: #f4f4f4;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.hobbies h2 {
+    font-family: "gilroy-bold";
+    font-size: 24px;
+    color: #222222;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+.hobbies p {
+    font-family: "gilroy-light";
+    font-size:16px;
+    color: #222222;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hobbies li {
+    font-family: "gilroy-light";
+    font-size: 16px;
+    color: #555555;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hobbies li:hover {
+    transform: translateY(-3px);
+    background-color: #f0f0f0;
+}
+
+.about {
+    width: 80%;
+    margin-top: 5rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-family: "gilroy-bold";
+    font-size: 24px;
+    color: #222222;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-family: "gilroy-light";
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.about a {
+    font-family: "gilroy-medium";
+    font-size: 16px;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.about a:hover {
+    color: #0056b3;
+}
+.contact {
+    width: 80%;
+    margin: 5rem auto;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-family: "gilroy-bold";
+    font-size: 24px;
+    color: #222222;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-family: "gilroy-light";
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+    font-family: "gilroy-medium";
+    font-size: 16px;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+}
+
+.social-links a {
+    font-family: "gilroy-medium";
+    font-size: 16px;
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222222;
+    color: #ffffff;
+    font-family: "gilroy-regular";
+    font-size: 14px;
+    border-top: 1px solid #444444;
+}
+
+footer p{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "gilroy-medium";
+    transition: color 0.3s;
+}
+footer p a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "gilroy-medium";
+    transition: color 0.3s;
+}
+
